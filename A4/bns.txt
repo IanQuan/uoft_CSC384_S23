@@ -1,0 +1,12 @@
+1. Explain what the calculations above might or might not tell you about the "fairness" of your Naive Bayesian network.
+By running the Naive Bayes model on the test data set, 99.95% of women end up with
+P(Predicted Salary > $50K | Evidence) straightly greater than P(Predicted Salary > $50K | Evidence, Gender), while
+0 % of men end up with P(Predicted Salary >$50K | Evidence) straightly greater than P(Predicted Salary >$50K | Evidence, Gender).
+This suggests that the prediction is not well separated from gender as the result shows that the prediction heavily favour
+women. Hence, the prediction is not fair in this case. Also, the prediction does not achieve demographic parity, since
+the probability for men and women are way off.
+
+2. Would you be willing to use your model to recommend starting salaries for employees at a firm? Why or why not?
+I would not use this model to recommend starting salaries for employees since the result shows that the prediction may
+not be fair and accurate. For men, there is only 66% correctly predict the salary is over 50K , while for women, there
+is only 57% have a correct prediction.
